@@ -21,7 +21,6 @@ for i in range(0, len(out1), 5):
     for j in range(0, len(out1[0]), 2):
         try:
             x = tuple([tuple(k[j:j+2]) for k in tuple(out1[i:i+4])])
-            #print(tuple(x))
             print(braille[x], end='')
         except:
             print("#", end='')
